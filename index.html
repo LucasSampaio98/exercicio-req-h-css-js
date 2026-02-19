@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Requisição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Buscador de Usuários GitHub</h1>
+
+        <div class="search-box">
+            <input type="text" id="username" placeholder="Digite um usuário do GitHub (ex: facebook)" value="facebook">
+            <button onclick="buscarUsuario()">Buscar</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+            <!-- Resultado será inserido aqui -->
+        </div>
+
+        <div class="exemplos">
+            <h3>Exemplos para testar:</h3>
+            <button onclick="testarUsuario('facebook')">facebook</button>
+            <button onclick="testarUsuario('google')">google</button>
+            <button onclick="testarUsuario('microsoft')">microsoft</button>
+            <button onclick="testarUsuario('usuario-invalido')">usuário inválido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
